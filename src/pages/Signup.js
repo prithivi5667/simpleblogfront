@@ -17,7 +17,7 @@ export default function Signup() {
       email,
     };
     axios
-      .post("http://localhost:5000/user/signup", newUser)
+      .post("https://pt-blog.herokuapp.com/user/signup", newUser)
       .then((res) => {
         if (res.data.isLogged) {
           sessionStorage.setItem("isLogged", true);
